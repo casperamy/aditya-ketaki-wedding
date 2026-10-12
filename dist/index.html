@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f3ecdf">
+<title>A beginning · An illustrated invitation</title>
+<meta name="description" content="A little journey into a painted world. Scroll to discover.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="animation.css?v=5">
+<link rel="preload" as="image" href="assets/animation/distant-garden.webp"><script src="painted-characters.js?v=2" defer></script><script src="animation.js?v=6" defer></script>
+<link rel="stylesheet" href="wedding.css?v=5"><script src="wedding.js?v=2" defer></script><script src="illustration-motion.js?v=3" defer></script>
+</head>
+<body>
+<div class="journey" id="journey" aria-label="An illustrated proposal, revealed as you scroll">
+ <div class="viewport"><div class="frame" id="stage">
+  <div class="world" aria-hidden="true">
+   <svg class="painted-scene" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs><clipPath id="water-mask"><rect x="-100" y="925" width="1736" height="260"/></clipPath></defs>
+    <image id="distant-plane" href="assets/animation/distant-garden.webp" x="-32" y="-22" width="1600" height="1068" preserveAspectRatio="none"/>
+    <g id="water-plane"><svg x="-100" y="912" width="1736" height="300" viewBox="0 910 1536 114" preserveAspectRatio="none" overflow="hidden"><image href="assets/animation/wada.webp" width="1536" height="1024"/></svg></g>
+    <g id="courtyard-plane">
+     <image href="assets/animation/house-terrace.webp" x="0" y="0" width="1536" height="1024"/>
+     <ellipse cx="771" cy="864" rx="102" ry="8" fill="#6f492e" opacity=".16"/>
+     <foreignObject id="painted-couple" x="652" y="584" width="234" height="293">
+      <canvas xmlns="http://www.w3.org/1999/xhtml" id="couple-canvas" width="400" height="500" style="display:block;width:100%;height:100%"></canvas>
+     </foreignObject>
+    </g>
+   </svg>
+   <div class="haze"></div>
+   <img class="botanical botanical-left" src="assets/animation/mango.webp" alt="" width="1254" height="1254">
+   <img class="botanical botanical-right" src="assets/animation/mango.webp" alt="" width="1254" height="1254">
+   <img class="near-leaf" src="assets/animation/mango.webp" alt="" width="1254" height="1254">
+   <div class="vignette"></div>
+  </div>
+  <div class="quiet-caption" aria-hidden="true">Some moments become forever.</div>
+  <div class="controls"><span class="chapter" aria-hidden="true">I.</span><button class="skip" id="skip">Skip to the reveal ↗</button></div>
+  <div class="scroll-prompt" aria-hidden="true"><span>Scroll to discover</span><i></i></div>
+  <section class="end-card" id="reveal" aria-hidden="true" inert aria-label="The wedding reveal">
+   <svg class="ganpati" data-micro="ganpati" viewBox="0 0 80 90" role="img" aria-label="Ganpati"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M29 25 32 13h16l4 12M31 18h19M37 12l3-7 4 7M24 33c-12-14-23-4-17 11 3 9 12 14 20 9M56 33c12-14 23-4 17 11-3 9-12 14-20 9M25 29c9-8 21-8 30 0 7 8 4 19-4 25M25 29c-7 8-5 19 3 26M34 43c-3 9-5 22 1 27 8 7 21-1 15-7-3-3-8-1-7 3M32 33l4 3M48 33l-4 3M38 27h4M40 30v5M29 48l-4 9M51 48l4 9M22 62c-13 6-12 19 1 20h34c13-1 14-14 1-20M24 65l6 13M56 65l-6 13M14 84h52"/><circle cx="40" cy="3" r="1" fill="currentColor"/></g></svg>
+   <h1 tabindex="-1" id="names"><span>Aditya</span> <em>&</em> <span>Ketaki</span></h1><div class="fine-rule" aria-hidden="true"></div>
+   <p class="date"><time datetime="2026-12-27">27 December 2026</time></p><p class="place">Sunol, California</p>
+   <form id="gate-form" class="gate-form">
+    <label for="guest-name">Your invitation awaits</label>
+    <p>Enter your name to find your invitation.</p>
+    <div class="gate-entry"><input id="guest-name" name="guest" autocomplete="name" placeholder="Your first or full name" maxlength="100" required aria-describedby="gate-error gate-note"><button type="submit" class="primary">Find my invitation <span aria-hidden="true">↗</span></button></div>
+    <p id="gate-error" class="form-error" role="alert"></p>
+    <small id="gate-note">Preview invitation · enter Aarya</small>
+   </form>
+   <a class="primary gate-continue" id="gate-continue" href="#invitation" hidden>Enter the celebration ↗</a>
+   <button class="replay" id="replay"><span aria-hidden="true">↻</span> Experience it again</button>
+  </section>
+  <div class="paper-grain"></div>
+ </div><div class="progress" aria-hidden="true"></div></div>
+ <p class="sr-only" id="scene-description" aria-live="polite">A garden waits beyond the leaves. Scroll to enter, or use Skip to the reveal.</p>
+</div>
+
+<div id="wedding-site" hidden>
+ <header class="wedding-nav"><a class="wordmark" href="#invitation" aria-label="Aditya and Ketaki invitation">A <i>&</i> K</a><nav aria-label="Wedding navigation"><a href="#celebrations">The day</a><a href="#venue">The place</a><a href="#rsvp" class="nav-rsvp">RSVP ↗</a></nav></header>
+ <main id="wedding-content">
+ <section id="invitation" class="welcome section-pad">
+  <div class="welcome-canopy" aria-hidden="true"><img class="welcome-mango mango-one" data-micro="mango" src="assets/animation/mango.webp" width="1254" height="1254" alt="" loading="lazy">
+  <img class="welcome-mango mango-two" data-micro="mango" src="assets/animation/mango.webp" width="1254" height="1254" alt="" loading="lazy">
+  </div><div class="welcome-copy enter-view"><p class="eyebrow" id="personal-welcome">DEAR AARYA</p><h2 tabindex="-1" id="welcome-heading">Some days are meant<br>to be <em>shared.</em></h2><p>Together with our families, we invite you to celebrate our wedding. A day of love, laughter, and the traditions that bring us home.</p><div class="signature">Aditya <i>&</i> Ketaki</div><p class="welcome-date">SUNDAY, 27 DECEMBER 2026</p><a href="#rsvp" class="primary">Celebrate with us <span aria-hidden="true">↗</span></a></div>
+  <div class="countdown" aria-label="Countdown to the wedding"><span><strong id="count-days">—</strong><small>DAYS</small></span><i>:</i><span><strong id="count-hours">—</strong><small>HOURS</small></span><i>:</i><span><strong id="count-minutes">—</strong><small>MINUTES</small></span><p>Until we make it forever.</p></div>
+ </section>
+ <section id="celebrations" class="celebrations section-pad">
+  <div class="celebration-intro enter-view"><p class="eyebrow">01 / THE WEDDING DAY</p><h2>A little joy.<br>A lot of <em>tradition.</em></h2><p>Join us from 10:00 AM to 3:30 PM.<br>All celebrations at Sunol’s Casa Bella.</p><p class="small-note">Sunday, December 27 · All times Pacific</p><div class="elephant-art" data-micro="elephant"><img class="royal-elephant" src="assets/illustrations/royal-elephant.webp" width="1536" height="1024" alt="A painted ceremonial elephant in maroon and gold, gently lifting its trunk" loading="lazy"><canvas class="elephant-motion" width="900" height="600" aria-hidden="true"></canvas></div><a class="text-link" href="assets/aditya-and-ketaki-wedding.ics" download>Save the date to your calendar ↗</a></div>
+  <ol class="day-timeline">
+   <li class="enter-view"><span class="event-no">01</span><div><p class="event-time">10:30 — 11:00 AM</p><h3>Baraat</h3><p>The music begins, the dancing follows.<br>Come ready to celebrate.</p></div></li>
+   <li class="enter-view"><span class="event-no">02</span><div><p class="event-time">11:00 — 11:30 AM</p><h3>Vaarmala</h3><p>Two garlands, one beautiful beginning.</p></div></li>
+   <li class="enter-view"><span class="event-no">03</span><div><p class="event-time">11:30 AM — 12:30 PM</p><h3>Vidhi</h3><p>Sacred rituals, heartfelt promises,<br>and the blessings of our loved ones.</p></div></li>
+   <li class="enter-view"><span class="event-no">04</span><div><p class="event-time">12:30 — 3:30 PM</p><h3>Lunch</h3><p>A meal shared with our favourite people.<br>The sweetest way to begin forever.</p></div></li>
+  </ol>
+ </section>
+ <section id="venue" class="venue-section section-pad">
+  <div class="venue-painting enter-view"><div class="venue-depth" data-micro="house"><svg viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A layered Deccani-inspired painting of a lakeside Maharashtrian courtyard">
+   <image class="venue-far" href="assets/animation/distant-garden.webp" x="-32" y="-22" width="1600" height="1068" preserveAspectRatio="none"/>
+   <g class="venue-water"><svg x="-100" y="912" width="1736" height="300" viewBox="0 910 1536 114" preserveAspectRatio="none" overflow="hidden"><image href="assets/animation/wada.webp" width="1536" height="1024"/></svg></g>
+   <image class="venue-house" href="assets/animation/house-terrace.webp" width="1536" height="1024"/>
+  </svg></div><span>A little piece of home, in a painted world.</span></div>
+  <div class="venue-copy enter-view"><p class="eyebrow">02 / THE MEETING PLACE</p><h2>Sunol’s<br><em>Casa Bella</em></h2><p>A California setting.<br>A celebration close to our roots.</p><address>11984 Main Street<br>Sunol, California 94586</address><a class="primary" href="https://www.google.com/maps/dir/?api=1&destination=Sunol%27s%20Casa%20Bella%2C%2011984%20Main%20St%2C%20Sunol%2C%20CA%2094586" target="_blank" rel="noopener noreferrer">Find your way <span aria-hidden="true">↗</span></a><p class="small-note">The painting is part of our invitation artwork.</p></div>
+ </section>
+ <section id="details" class="details-section section-pad">
+  <div class="details-intro enter-view"><p class="eyebrow">03 / A FEW LITTLE DETAILS</p><h2>Come as you are.<br>In your <em>festive best.</em></h2><p class="attire-label">INDIAN TRADITIONALS</p><p>Your favourite saree or kurta, a little colour, a little gold. We can’t wait to celebrate with you.</p><div class="colour-notes" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div>
+  <div class="faq enter-view"><details><summary>When should I arrive?<span>+</span></summary><p>Join us at 10:00 AM. The Baraat begins at 10:30 AM, followed by the Vaarmala, Vidhi, and lunch.</p></details><details><summary>Where do the events take place?<span>+</span></summary><p>All events listed here take place at Sunol’s Casa Bella. Find the address and directions above.</p></details><details><summary>What about travel and parking?<span>+</span></summary><p>Travel and parking details will be shared here closer to the wedding. Please check back before you travel.</p></details><details><summary>Is there a gift registry?<span>+</span></summary><p>Registry details are coming soon. We’ll update this page when they’re ready.</p></details><details><summary>Will this RSVP reach the couple?<span>+</span></summary><p>This website is currently a preview. Responses and reminder preferences are not sent. Please use the <a href="https://adityaandketaki.netlify.app/" target="_blank" rel="noopener noreferrer">current wedding website</a> for your actual RSVP.</p></details></div>
+ </section>
+ <section id="rsvp" class="rsvp-section section-pad">
+  <div class="rsvp-copy enter-view"><p class="eyebrow">04 / WITH YOU, IT’S A CELEBRATION</p><h2>A place in our day.<br>A place in <em>our hearts.</em></h2><p>We would love to have you by our side.</p><img class="rsvp-mango" data-micro="mango" src="assets/animation/mango.webp" width="1254" height="1254" alt="" loading="lazy"></div>
+  <div class="rsvp-panel enter-view"><form id="rsvp-form"><p class="eyebrow">YOUR RESPONSE</p><label for="rsvp-name">Guest name</label><input id="rsvp-name" name="name" autocomplete="name" required maxlength="100"><fieldset><legend>Will you celebrate with us?</legend><label class="choice"><input type="radio" name="attendance" value="yes" required> Joyfully accepts</label><label class="choice"><input type="radio" name="attendance" value="no" required> Regretfully declines</label></fieldset><label for="rsvp-note">A note for the couple <span>(optional)</span></label><textarea id="rsvp-note" name="note" rows="3" maxlength="500" placeholder="Send a little love…"></textarea><button class="primary" type="submit">Preview my response <span aria-hidden="true">↗</span></button><p class="form-note">Preview only. Your response is not sent.</p></form><div id="rsvp-success" hidden role="status"><span class="success-symbol" aria-hidden="true">✧</span><h3>Your response,<br>with love.</h3><p id="rsvp-summary"></p><p class="form-note">This was a preview. Nothing has been sent to the couple.</p><button type="button" class="primary" id="edit-response">Edit my response</button></div></div>
+ </section>
+ <section class="save-date section-pad"><div><p class="eyebrow">KEEP A LITTLE SPACE FOR US</p><h2>Until <em>December.</em></h2><p>Save the day. We’ll make the memories.</p></div><div class="save-actions"><a class="primary" href="assets/aditya-and-ketaki-wedding.ics" download>Add to calendar ↗</a><button class="text-link" id="open-reminder">Remind me by email ↗</button></div></section>
+ </main>
+ <footer class="wedding-footer"><div class="footer-mark">A <i>&</i> K</div><p>27 DECEMBER 2026 · SUNOL, CALIFORNIA</p><span>With full hearts, and all our love.</span><button type="button" class="text-link" id="change-invitation">Find a different invitation</button><a class="text-link" href="#invitation">Back to the invitation ↑</a></footer>
+</div>
+<dialog id="reminder-dialog" aria-labelledby="reminder-title"><button class="dialog-close" id="close-reminder" aria-label="Close reminder">×</button><p class="eyebrow">A DATE TO REMEMBER</p><h2 id="reminder-title">A little <em>reminder.</em></h2><form id="reminder-form"><label for="reminder-email">Email address</label><input id="reminder-email" type="email" name="email" autocomplete="email" required maxlength="200" placeholder="you@example.com"><label for="reminder-timing">Remind me</label><select id="reminder-timing" name="timing"><option value="one week">One week before</option><option value="one day">One day before</option><option value="one week and one day">One week and one day before</option></select><button class="primary" type="submit">Preview reminder ↗</button><p class="form-note">Preview only. No emails will be sent or scheduled.</p></form><div id="reminder-success" hidden role="status"><h3>Your reminder preview.</h3><p id="reminder-summary"></p><p class="form-note">No email has been scheduled. Download the calendar invitation to save the real date.</p><a class="primary" href="assets/aditya-and-ketaki-wedding.ics" download>Add to calendar ↗</a></div></dialog>
+
+<noscript><style>.end-card{visibility:visible;opacity:1;transform:none;pointer-events:auto}.journey{height:100svh;min-height:0}.controls,.scroll-prompt,.replay{display:none}.world{opacity:.15}</style><p class="no-script-message">Please enable JavaScript to view the animated invitation and name gate.</p></noscript>
+</body></html>

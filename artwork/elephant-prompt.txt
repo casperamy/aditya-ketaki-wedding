@@ -1,0 +1,5 @@
+Built-in image generation. Supporting illustration, transparent alpha.
+Asset: dist/assets/illustrations/royal-elephant.webp
+Reference: dist/assets/animation/mango.webp
+
+Use case: illustration-story. Create a supporting transparent cutout artwork for a Maharashtrian wedding website. A single dignified royal Indian elephant in side profile facing right, trunk gently lifted, four legs grounded, wearing a maroon and forest-green ceremonial textile with fine antique-gold paisley borders, little bells and a tasteful forehead ornament. No rider, no howdah, no weapons. Match the supplied mango artwork's seventeenth-century Deccani miniature-inspired opaque gouache, warm dark-sepia contours, flattened perspective, restrained paper pigment texture. Slate blue-grey elephant, creamy ivory tusks, deep maroon and muted gold detailing. Full animal with breathing room, gracefully composed as a horizontal illustration. Not photorealistic, not a 3D render, not a cartoon mascot. No background landscape, no text, no border. Actual transparent background.

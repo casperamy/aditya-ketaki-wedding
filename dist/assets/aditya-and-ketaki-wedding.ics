@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Aditya and Ketaki//Wedding//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:aditya-ketaki-20261227@wedding.local
+DTSTAMP:20261011T210000Z
+DTSTART:20261227T180000Z
+DTEND:20261227T233000Z
+SUMMARY:Aditya and Ketaki Wedding Celebration
+LOCATION:Sunol's Casa Bella\, 11984 Main St\, Sunol\, CA 94586
+DESCRIPTION:Indian traditionals. All times Pacific.\n10 AM Arrival
+ \n10:30 AM Baraat\n11 AM Vaarmala\n11:30 AM Vidhi
+ \n12:30 PM Lunch\nCelebrations end at 3:30 PM.
+END:VEVENT
+END:VCALENDAR

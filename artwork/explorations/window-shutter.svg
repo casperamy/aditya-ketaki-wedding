@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 800" preserveAspectRatio="none">
+<defs>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".11 .002" numOctaves="3" seed="8"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncR type="linear" slope=".20" intercept=".18"/><feFuncG type="linear" slope=".14" intercept=".09"/><feFuncB type="linear" slope=".09" intercept=".035"/><feFuncA type="linear" slope=".32"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+<linearGradient id="wood" x2="1" y2="0"><stop stop-color="#372116"/><stop offset=".12" stop-color="#67432b"/><stop offset=".38" stop-color="#805536"/><stop offset=".7" stop-color="#70492e"/><stop offset="1" stop-color="#3e261a"/></linearGradient>
+<linearGradient id="panel" x2="1" y2="0"><stop stop-color="#362419"/><stop offset=".11" stop-color="#775236"/><stop offset=".4" stop-color="#88603e"/><stop offset=".9" stop-color="#6b482d"/><stop offset="1" stop-color="#362419"/></linearGradient>
+<linearGradient id="brass" x2="1" y2="1"><stop stop-color="#d5b576"/><stop offset=".5" stop-color="#a17a43"/><stop offset="1" stop-color="#614620"/></linearGradient>
+</defs>
+<rect width="300" height="800" fill="url(#wood)"/>
+<g filter="url(#grain)"><rect width="300" height="800" fill="url(#wood)"/>
+<rect x="27" y="26" width="246" height="346" fill="#2d1c13"/>
+<path d="M30 29h240l-13 14H43Z" fill="#ac7e50"/><path d="M30 29v340l13-13V43Z" fill="#997048"/>
+<path d="M270 29v340l-13-13V43Z" fill="#311d12"/><path d="M30 369h240l-13-13H43Z" fill="#281b12"/>
+<rect x="43" y="43" width="214" height="313" fill="url(#panel)"/>
+<path d="M51 51h198v297H51Z" fill="none" stroke="#bb8b56" stroke-width="1" opacity=".5"/>
+<rect x="27" y="427" width="246" height="346" fill="#2d1c13"/>
+<path d="M30 430h240l-13 14H43Z" fill="#ac7e50"/><path d="M30 430v340l13-13V444Z" fill="#997048"/>
+<path d="M270 430v340l-13-13V444Z" fill="#311d12"/><path d="M30 770h240l-13-13H43Z" fill="#281b12"/>
+<rect x="43" y="444" width="214" height="313" fill="url(#panel)"/>
+<path d="M51 452h198v297H51Z" fill="none" stroke="#bb8b56" stroke-width="1" opacity=".5"/>
+</g>
+<path d="M8 0v800M290 0v800" stroke="#b28759" stroke-width="2" opacity=".6"/>
+<path d="M17 0v800M282 0v800" stroke="#28190f" stroke-width="2" opacity=".75"/>
+<g fill="url(#brass)" stroke="#332518" stroke-width="1"><rect x="0" y="135" width="39" height="15" rx="2"/><rect x="0" y="650" width="39" height="15" rx="2"/><rect x="256" y="382" width="12" height="40" rx="6"/><ellipse cx="262" cy="401" rx="10" ry="14" fill="none" stroke="#b49255" stroke-width="4"/></g>
+</svg>

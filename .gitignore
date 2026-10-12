@@ -1,0 +1,11 @@
+.DS_Store
+*.tar.gz
+*.tar
+node_modules/
+.openai/*.local.*
+qa/
+
+# Local hosting metadata and unused personal reference images
+.openai/
+artwork/original-proposal.jpg
+artwork/line-reference.png
